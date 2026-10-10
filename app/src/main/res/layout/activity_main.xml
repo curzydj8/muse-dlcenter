@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下载中心"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_wechat_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信登录"
+            android:minWidth="0dp"
+            android:textSize="13sp"
+            android:layout_marginLeft="8dp" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新"
+            android:minWidth="0dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:minWidth="0dp"
+            android:textSize="13sp"
+            android:layout_marginLeft="8dp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:minWidth="0dp"
+            android:textSize="13sp"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎵 音乐播放器"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ 上传文件（管理员）"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:text="加载中…" />
+
+    <ListView
+        android:id="@+id/lv_files"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#222222"
+        android:dividerHeight="1dp" />
+</LinearLayout>
