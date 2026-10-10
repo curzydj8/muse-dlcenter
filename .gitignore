@@ -1,0 +1,4 @@
+build/
+icon-src/
+*.idsig
+*.keystore
